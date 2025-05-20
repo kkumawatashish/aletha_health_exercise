@@ -10,11 +10,11 @@ import 'package:get_it/get_it.dart';
 import 'package:go_router/go_router.dart';
 
 class AppRoute {
-  static String _homeScreenKeyValue = 'home_screen_initial';
+  //static String _homeScreenKeyValue = 'home_screen_initial';
   
-  static void refreshHomeScreen() {
-    _homeScreenKeyValue = 'home_screen_${DateTime.now().millisecondsSinceEpoch}';
-  }
+  //static void refreshHomeScreen() {
+  //  _homeScreenKeyValue = 'home_screen_${DateTime.now().millisecondsSinceEpoch}';
+  //}
 
   static final appRoute = GoRouter(
     initialLocation: '/home',
@@ -22,7 +22,7 @@ class AppRoute {
       GoRoute(
         path: '/home',
         builder: (BuildContext context, GoRouterState state) {
-          return HomeScreen(screenKey: ValueKey(_homeScreenKeyValue));
+          return HomeScreen();
         },
       ),
       GoRoute(

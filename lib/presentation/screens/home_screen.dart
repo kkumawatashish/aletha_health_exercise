@@ -8,13 +8,12 @@ import 'package:go_router/go_router.dart';
 import '../../core/helpers/streak_tracker.dart';
 
 class HomeScreen extends StatelessWidget {
-  final Key? screenKey;
+  //final Key? screenKey;
   
-  const HomeScreen({this.screenKey}) : super(key: screenKey);
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final exerciseBloc = context.read<ExerciseBloc>();
 
     return Scaffold(
       appBar: AppBar(title: Text('Home')),

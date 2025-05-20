@@ -38,7 +38,7 @@ class _ExerciseTimerScreenState extends State<ExerciseTimerScreen> {
 
   void _onCompleted() {
     _exerciseBloc.add(MarkExerciseCompleted(widget.exercise.id));
-    AppRoute.refreshHomeScreen();
+    //AppRoute.refreshHomeScreen();
     showDialog(
       context: context,
       builder: (_) => AlertDialog(
